@@ -1,0 +1,93 @@
+<html>
+    <head>
+        <title>
+DARPAN
+
+        </title>
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+       <div class="main">
+           <nav>
+             
+             <div class="nav-links">
+                 <ul>
+                     <li> <a href="file:///C:/Users/Sunidhi/Desktop/newdarpan/gps.html"> GPS LOCATION</a></li>
+                     <li> <a href="C:\Users\Sunidhi\Desktop\newdarpan\img.html"> CAPTURED IMAGE</a></li>
+                     <li> <a href="C:\Users\Sunidhi\Desktop\newdarpan\mess.html"> SOS</a></li>
+                     
+                 </ul>
+             </div>
+
+           </nav>
+           <div class="information">
+               <div class= "overlay"></div>
+               <img src="https://em.wattpad.com/dda12007dcd5ad3126c08b4d2e863657d4324cde/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f776174747061642d6d656469612d736572766963652f53746f7279496d6167652f586342776e544271767841544d673d3d2d342e31356637663531613634653832663636313931303835383734312e6a7067?s=fit&w=720&h=720" class="download">
+           
+
+           
+           <div id="circle">
+               <div class="feature one">
+                   <img src="https://cdn.searchenginejournal.com/wp-content/uploads/2020/01/bc1be38b-cef6-4f2b-9ed4-ff6d1098047c-5e3375687b680-1520x800.jpeg">
+                   <div>
+                       <h1>SOS</h1>
+                       <p> SENDS SOS ALERT</p>
+                   </div>
+            </div>
+               
+               <div class="feature two">
+                <img src="https://icdn2.digitaltrends.com/image/digitaltrends/nikon-d850-review-2-3.jpg">
+                <div>
+                    <h1>CAMERA</h1>
+                    <p> CAPTURES IMAGE OF THE CULPRIT</p>
+                </div>
+               </div>
+
+            
+
+               <div class="feature three">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTv7IhV5I1OR4Anf6idEJWLoNNokkpR4x0agQ&usqp=CAU">
+                <div>
+                    <h1>BUZZER</h1>
+                    <p> ALERTS PEOPLE NEARBY</p>
+                </div>
+               </div>
+
+               <div class="feature four">
+                <img src= "https://ak.picdn.net/shutterstock/videos/18111034/thumb/2.jpg">
+                <div>
+                    <h1>AUDIO RECORDER</h1>
+                    <p> RECORDS THE AUDIO TO SEVE AS A VALID PROOF</p>
+                </div>
+               </div>
+               
+           </div>
+       </div>
+       <div class ="controls">
+           <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRU1_eevbt4WA9sIDCGhXwM0XpbF0zsg8tYSg&usqp=CAU" id="upBtn"><p style="color:white"> Rotate anti-clockwise</p>
+           <h3>FEATURES<br>(USE ARROW FOR ROTATING THE WHEEL)</h3>
+           <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRU1_eevbt4WA9sIDCGhXwM0XpbF0zsg8tYSg&usqp=CAU" id="downBtn"><p style="color:white"> Rotate clockwise</p>
+       </div> 
+       </div>
+       <script>
+           var circle = document.getElementById("circle");
+           var upBtn = document.getElementById("upBtn");
+           var downBtn = document.getElementById("downBtn");
+
+           var rotateValue = circle.style.transform;
+           var rotateSum;
+           upBtn.onclick= function()
+           {
+               rotateSum= rotateValue + "rotate(-90deg)";
+               circle.style.transform= rotateSum;
+               rotateValue=rotateSum;
+           }
+           downBtn.onclick= function()
+           {
+               rotateSum= rotateValue + "rotate(+90deg)";
+               circle.style.transform= rotateSum;
+               rotateValue=rotateSum;
+           }
+       </script>
+    </body>
+</html>

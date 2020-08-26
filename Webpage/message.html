@@ -1,0 +1,72 @@
+<html>
+<head>
+    
+   
+<style>
+.alert {
+  padding: 20px;
+  background-color: #f44336;
+  color: white;
+  opacity: 1;
+  transition: opacity 0.6s;
+  margin-bottom: 15px;
+}
+
+.alert.success {background-color: #4CAF50;}
+.alert.info {background-color: #2196F3;}
+.alert.warning {background-color: #ff9800;}
+
+.closebtn {
+  margin-left: 15px;
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.closebtn:hover {
+  color: black;
+}
+</style>
+</head>
+<body>
+    
+<h2>Alert sent to the registered contact numbers.</h2>
+<p><b><U>NOTE: Click on the "x" symbol to close the alert message.</b> </U></p>
+<div class="alert">
+  <span class="closebtn">&times;</span>  
+  <strong>Danger!</strong> The woman is in Danger. The location is present in the location tab.
+</div>
+<div class="alert success">
+  <span class="closebtn">&times;</span>  
+  <strong>Success!</strong>Image of the culprit has been captured. It is available in the captured image tab.
+</div>
+
+<div class="alert info">
+  <span class="closebtn">&times;</span>  
+  <strong>Info!</strong> Reach out for help.
+</div>
+
+<div class="alert warning">
+  <span class="closebtn">&times;</span>  
+  <strong>Warning!</strong> Warning! Warning! Warning! Warning!
+</div>
+
+<script>
+var close = document.getElementsByClassName("closebtn");
+var i;
+
+for (i = 0; i < close.length; i++) {
+  close[i].onclick = function(){
+    var div = this.parentElement;
+    div.style.opacity = "0";
+    setTimeout(function(){ div.style.display = "none"; }, 600);
+  }
+}
+</script>
+
+</body>
+</html>
